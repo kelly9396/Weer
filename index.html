@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather Application</title>
     <link rel="stylesheet" href="weerapp/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +30,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-city" id="weather-city">South Africa</h1>
+            <h1 class="weather-city" id="city"></h1>
             <p class="weather-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -39,7 +39,7 @@
           </div>
           <div class="weather-app-container">
             <div class="weather-icon">☀️</div>
-            <div class="weather-temp">12</div>
+            <div class="weather-temp" id="weather-temp"></div>
             <div class="weather-unit">℃</div>
           </div>
         </div>
